@@ -11,10 +11,17 @@ import string
 
 def naive(msg, mapping):
     print(mapping)
+    
 
 
 def better_naive(msg, mapping):
     pass
+
+
+def smart(msg, mapping):
+    """
+    decode in 2 by 2 chunks?
+    """
 
 
 if __name__ == "__main__":
