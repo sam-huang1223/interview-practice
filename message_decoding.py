@@ -10,16 +10,16 @@ import string
 
 
 def naive(msg, mapping):
+    """
+
+    O(n*n!) time, O(n!) space complexity (from call stack)
+    """
     print(mapping)
-    
-
-
-def better_naive(msg, mapping):
-    pass
 
 
 def smart(msg, mapping):
     """
+    no easy brute force solution - use dynamic programming
     decode in 2 by 2 chunks?
     """
 
@@ -32,5 +32,5 @@ if __name__ == "__main__":
 
     assert naive(inp1, mapping) == 3, "naive attempt fails on inp1"
     assert naive(inp2, mapping) == 0, "naive attempt fails on inp2"
-    assert better_naive(inp1, mapping) == 3, "better_naive attempt fails on inp1"
-    assert better_naive(inp2, mapping) == 0, "better_naive attempt fails on inp2"
+    assert smart(inp1, mapping) == 3, "better_naive attempt fails on inp1"
+    assert smart(inp2, mapping) == 0, "better_naive attempt fails on inp2"
