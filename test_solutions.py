@@ -76,14 +76,15 @@ class TestArrayProducts:
     def test_smartest(self, test_input, expected):
         assert p3.smartest(test_input) == expected
 
+# tests for p4_message_decoding are contained within the file
 
-import message_decoding as p4
+import rooms_required as p5
 @pytest.mark.parametrize(("test_input, expected"), [
     ([1, 2, 3, 4, 5], [120, 60, 40, 30, 24]),
     ([3, 0, 1, 6], [0, 18, 0, 0]),  # contains 0
     ([3, 5, 2, -3, 3], [-90, -54, -135, 90, -90])  # contains negatives and duplicates
     ])
-class TestMessageDecoding:
+class TestRoomsRequired:
     """ (4) x*x=x tests """
 
     def test_naive(self, test_input, expected):
