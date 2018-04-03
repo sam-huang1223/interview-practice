@@ -77,7 +77,10 @@ class TestArrayProducts:
         assert p3.smartest(test_input) == expected
 
 # tests for p4_message_decoding are contained within the file
+# tests for p5_maximum_overlaps are contained within the file
+# tests for p6_linked_list_intersection contained within the file
 
+'''
 import rooms_required as p5
 @pytest.mark.parametrize(("test_input, expected"), [
     ([1, 2, 3, 4, 5], [120, 60, 40, 30, 24]),
@@ -89,6 +92,6 @@ class TestRoomsRequired:
 
     def test_naive(self, test_input, expected):
         pass
-
+'''
 
 # TODO look into automatically generating tests?

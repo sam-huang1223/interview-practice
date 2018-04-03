@@ -9,7 +9,8 @@ count the number of ways it can be decoded.
 def naive(msg, mapping):
     """
     Recursive solution -
-    O(k*n!) time, O(n) space due to call stack"""
+    O(k*n!) time, O(n) space due to call stack
+    """
     if not msg or '0' in msg:
         return 1
 
