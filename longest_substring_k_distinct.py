@@ -6,9 +6,7 @@ Given an integer k and a string s, find the length of the longest substring that
 For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
 """
 
-from functools import lru_cache
 
-@lru_cache(None)
 def smart(s, k):
     """
     no obvious naive solution -> DP required
