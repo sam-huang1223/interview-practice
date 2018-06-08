@@ -94,4 +94,4 @@ class TestRoomsRequired:
         pass
 '''
 
-# TODO look into automatically generating tests?
+# TODO look into automatically generating tests for new problems
